@@ -27,6 +27,7 @@ Este é um **BioLink personalizado** criado para apresentar o perfil profissiona
 
 ### ✨ Design e UX
 - Tema dark profissional com gradientes sutis
+- **Modo claro/escuro** com toggle animado e persistência
 - Foto de perfil circular com efeito glow
 - Animações suaves nos botões e elementos interativos
 - Tipografia responsiva com `clamp()` para escalabilidade
