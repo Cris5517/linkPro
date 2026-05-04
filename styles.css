@@ -10,6 +10,18 @@
   --shadow: 0 30px 60px rgba(15, 23, 42, 0.25);
 }
 
+/* Light theme variables */
+[data-theme="light"] {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --button: #3b82f6;
+  --button-hover: #2563eb;
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,6 +34,13 @@ body {
               radial-gradient(circle at bottom right, rgba(99, 102, 241, 0.12), transparent 30%),
               var(--bg);
   color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="light"] body {
+  background: radial-gradient(circle at top, rgba(59, 130, 246, 0.08), transparent 35%),
+              radial-gradient(circle at bottom right, rgba(99, 102, 241, 0.06), transparent 30%),
+              var(--bg);
 }
 
 .container {
@@ -29,6 +48,63 @@ body {
   align-items: center;
   justify-content: center;
   padding: 32px 16px;
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+#theme-switch {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+#theme-switch:hover {
+  transform: scale(1.05);
+  box-shadow: 0 35px 65px rgba(15, 23, 42, 0.3);
+}
+
+[data-theme="light"] #theme-switch:hover {
+  box-shadow: 0 35px 65px rgba(0, 0, 0, 0.15);
+}
+
+.sun-icon, .moon-icon {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sun-icon {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+
+.moon-icon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+[data-theme="light"] .sun-icon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+[data-theme="light"] .moon-icon {
+  opacity: 0;
+  transform: rotate(90deg);
 }
 
 .profile-card {
@@ -38,6 +114,11 @@ body {
   border-radius: 32px;
   box-shadow: var(--shadow);
   padding: 32px;
+  transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="light"] .profile-card {
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .profile-photo {
@@ -91,6 +172,10 @@ h1 {
   line-height: 1.75;
 }
 
+[data-theme="light"] .description {
+  color: #475569;
+}
+
 .buttons-group {
   display: grid;
   gap: 14px;
@@ -120,11 +205,21 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+[data-theme="light"] .button.secondary {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 .quick-links {
   margin-top: 30px;
   padding-top: 28px;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
   text-align: center;
+}
+
+[data-theme="light"] .quick-links {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .quick-links span {
@@ -154,6 +249,11 @@ h1 {
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
+[data-theme="light"] .icon-link {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text);
+}
+
 .icon-link svg {
   width: 22px;
   height: 22px;
@@ -162,6 +262,10 @@ h1 {
 .icon-link:hover {
   background: rgba(59, 130, 246, 0.2);
   transform: translateY(-2px);
+}
+
+[data-theme="light"] .icon-link:hover {
+  background: rgba(59, 130, 246, 0.15);
 }
 
 @media (max-width: 420px) {
