@@ -3,6 +3,6 @@ Para que a foto apareça na página, salve a imagem como "photo.jpg" na mesma pa
 Arquivos atuais:
 - index.html
 - styles.css
-- cristian-cazar-fiorin.vcf
+- cristian-cezar-fiorin.vcf
 
 Em seguida, abra index.html no navegador.

@@ -3,12 +3,11 @@
 > **BioLink profissional** desenvolvido para centralizar portfólio de Engenharia de Computação, certificações AWS e conexões profissionais.
 
 ![Preview](https://img.shields.io/badge/Status-Online-green?style=flat-square)
-![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue?style=flat-square)![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square)![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 ## 🌟 Sobre o Projeto
 
-Este é um **BioLink personalizado** criado para apresentar o perfil profissional de **Cristian Cazar Fiorin**, Engenheiro de Computação em formação com certificação AWS Cloud Practitioner. O projeto foi desenvolvido com foco em:
+Este é um **BioLink personalizado** criado para apresentar o perfil profissional de **Cristian Cezar Fiorin**, Engenheiro de Computação em formação com certificação AWS Cloud Practitioner. O projeto foi desenvolvido com foco em:
 
 - 🎨 **Design moderno** com tema dark e efeitos visuais dinâmicos
 - 📱 **Totalmente responsivo** para desktop, tablet e mobile
@@ -58,8 +57,8 @@ start index.html
 ### Personalizar
 1. Edite `index.html` para alterar textos e links
 2. Modifique `styles.css` para customizar cores e estilos
-3. Substitua `photo.jpg.jpeg` pela sua foto
-4. Atualize `cristian-cazar-fiorin.vcf` com seus dados
+- Substitua `photo.jpg` pela sua foto
+- Atualize `cristian-cezar-fiorin.vcf` com seus dados
 
 ### Deploy no GitHub Pages
 O site já está configurado para GitHub Pages. Acesse:
@@ -71,8 +70,8 @@ O site já está configurado para GitHub Pages. Acesse:
 linkPro/
 ├── index.html              # Página principal
 ├── styles.css              # Estilos CSS
-├── photo.jpg.jpeg          # Foto de perfil
-├── cristian-cazar-fiorin.vcf  # Cartão de contato
+├── photo.jpg                # Foto de perfil
+├── cristian-cezar-fiorin.vcf  # Cartão de contato
 ├── .nojekyll              # Configuração GitHub Pages
 └── README.md              # Este arquivo
 ```
