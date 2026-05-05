@@ -85,7 +85,7 @@ linkPro/
 
 ## 📞 Contato
 
-**Cristian Cazar Fiorin**
+**Cristian Cezar Fiorin**
 - 📧 Email: cristiancezarfiorin@gmail.com
 - 💼 LinkedIn: [linkedin.com/in/cristiancezarfiorin](https://linkedin.com/in/cristiancezarfiorin)
 - 📱 WhatsApp: +55 12 99785-8803
